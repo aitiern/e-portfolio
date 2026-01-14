@@ -1,10 +1,14 @@
 export type ProjectCategory =
   | "Engineering"
   | "Data Science"
-  | "Machine Learning"
+  | "Quant Finance"
+  | "Databases"
   | "NLP"
-  | "Databases";
-
+  | "Web"
+  | "Research"
+  | "Machine Learning"
+  | "Writing"
+  | "Other";
 
 export interface ProjectLink {
   label: string;
@@ -17,18 +21,10 @@ export interface Project {
   subtitle?: string;
   description?: string;
 
-  // Used for filtering / labels
-  categories: string[];
-
-  // Tech stack pills
+  categories: ProjectCategory[];
   tech: string[];
-
-  // Bullet highlights
   highlights: string[];
 
-  // Optional links (GitHub, Demo, etc.)
   links?: ProjectLink[];
-
-  // Optional: featured sorting
   featured?: boolean;
 }

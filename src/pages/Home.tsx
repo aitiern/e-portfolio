@@ -116,8 +116,7 @@ export default function Home() {
               </div>
 
               <div className="mt-4 flex flex-wrap gap-2">
-                {something.map((t: string) => (
-
+                {p.tech.map((t: string) => (
                   <span key={t} className="text-xs px-3 py-1 rounded-full border">
                     {t}
                   </span>
