@@ -21,7 +21,8 @@ export default function ProjectCard({ project }: Props) {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {project.categories.map((c) => (
+        {project.categories.map((c: string) => (
+
           <span key={c} className="text-xs px-3 py-1 rounded-full bg-gray-100">
             {c}
           </span>
@@ -29,7 +30,8 @@ export default function ProjectCard({ project }: Props) {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {project.tech.map((t) => (
+        {project.tech.map((t: string) => (
+
           <span key={t} className="text-xs px-3 py-1 rounded-full border">
             {t}
           </span>
@@ -37,14 +39,16 @@ export default function ProjectCard({ project }: Props) {
       </div>
 
       <ul className="mt-5 space-y-2 list-disc pl-5 text-gray-700">
-        {project.highlights.map((h, i) => (
+        {project.highlights.map((h: string, i: number) => (
+
           <li key={`${project.id}-h-${i}`}>{h}</li>
         ))}
       </ul>
 
       {project.links && project.links.length > 0 ? (
         <div className="mt-6 flex flex-wrap gap-3">
-          {project.links.map((l) => (
+          {project.links?.map((l: { label: string; href: string }) => (
+
             <a
               key={`${project.id}-${l.label}`}
               href={l.href}

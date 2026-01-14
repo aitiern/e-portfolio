@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
-import type { ProjectCategory } from "../types/Project";
+import type { Project } from "../types/Project";
+
 
 const allCategories: ProjectCategory[] = [
   "Engineering",

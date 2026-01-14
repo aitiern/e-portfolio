@@ -7,17 +7,28 @@ export type ProjectCategory =
 
 
 export interface ProjectLink {
-  label: "GitHub" | "Live Demo" | "Paper" | "Write-up" | "Docs";
+  label: string;
   href: string;
 }
 
 export interface Project {
   id: string;
   title: string;
-  subtitle: string; // 1-line impact statement
-  categories: ProjectCategory[];
+  subtitle?: string;
+  description?: string;
+
+  // Used for filtering / labels
+  categories: string[];
+
+  // Tech stack pills
   tech: string[];
-  highlights: string[]; // 2–5 bullet points: what you did / results
+
+  // Bullet highlights
+  highlights: string[];
+
+  // Optional links (GitHub, Demo, etc.)
   links?: ProjectLink[];
+
+  // Optional: featured sorting
   featured?: boolean;
 }
