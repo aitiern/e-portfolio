@@ -4,7 +4,6 @@ import ProjectCard from "../components/ProjectCard";
 import type { ProjectCategory } from "../types/Project";
 import { Link } from "react-router-dom";
 
-
 const allCategories: ProjectCategory[] = [
   "Engineering",
   "Data Science",
@@ -60,7 +59,14 @@ export default function Projects() {
 
       <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {visible.map((p) => (
-          <ProjectCard key={p.id} project={p} />
+          <Link
+            key={p.id}
+            to={`/projects/${p.id}`}
+            aria-label={`View case study: ${p.title}`}
+            className="block"
+          >
+            <ProjectCard project={p} />
+          </Link>
         ))}
       </div>
     </div>
