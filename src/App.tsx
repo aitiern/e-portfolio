@@ -11,22 +11,27 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <main className="pt-6">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/writing" element={<Writing />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+    <div className="min-h-screen text-gray-900">
+      {/* Soft tech gradient background */}
+      <div className="fixed inset-0 -z-10 bg-gradient-to-b from-white via-slate-50 to-white" />
+      <div className="fixed inset-0 -z-10 opacity-60 [background:radial-gradient(60%_40%_at_50%_0%,rgba(99,102,241,0.18),transparent_60%)]" />
 
-          {/* Redirect unknown routes back home */}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+      <Navbar />
+
+      <main className="pt-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/writing" element={<Writing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
       </main>
     </div>
   );
 }
-
