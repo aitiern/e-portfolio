@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import SocialLinks from "../components/SocialLinks";
 import { projects } from "../data/projects";
+import ProofStrip from "../components/ProofStrip";
+
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured).slice(0, 4);

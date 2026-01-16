@@ -8,6 +8,8 @@ import Research from "./pages/Research";
 import Writing from "./pages/Writing";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import ProjectDetail from "./pages/ProjectDetail";
+
 
 export default function App() {
   return (
@@ -27,7 +29,7 @@ export default function App() {
             <Route path="/writing" element={<Writing />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-
+            <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>

@@ -2,6 +2,8 @@ import { useMemo, useState } from "react";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import type { ProjectCategory } from "../types/Project";
+import { Link } from "react-router-dom";
+
 
 const allCategories: ProjectCategory[] = [
   "Engineering",
