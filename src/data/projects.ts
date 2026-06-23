@@ -1,6 +1,5 @@
 import type { Project } from "../types/Project";
 
-
 export const projects: Project[] = [
   {
     id: "trading-bot-platform",
@@ -8,7 +7,15 @@ export const projects: Project[] = [
     subtitle:
       "End-to-end trading system with strategy execution, risk management, backtesting, and a Flask UI.",
     categories: ["Engineering", "Machine Learning", "Data Science"],
-    tech: ["Python", "Flask", "Alpaca API", "MySQL", "AWS", "TensorFlow (LSTM)", "Optuna"],
+    tech: [
+      "Python",
+      "Flask",
+      "Alpaca API",
+      "MySQL",
+      "AWS",
+      "TensorFlow (LSTM)",
+      "Optuna",
+    ],
     highlights: [
       "Built a full trading workflow: preferences → strategy selection → paper trading execution.",
       "Designed a normalized SQL schema for users, trades, and positions with risk-management support.",
@@ -56,7 +63,13 @@ export const projects: Project[] = [
     subtitle:
       "Normalized relational design for clinical data workflows with security-aware modeling.",
     categories: ["Databases", "Engineering", "Research"],
-    tech: ["SQL", "ER Modeling", "Normalization", "Constraints", "ICD-10 (concepts)"],
+    tech: [
+      "SQL",
+      "ER Modeling",
+      "Normalization",
+      "Constraints",
+      "ICD-10 (concepts)",
+    ],
     highlights: [
       "Designed an ER model and normalized schema supporting users, preferences, trades/positions (domain-specific variants).",
       "Applied constraints and relationship modeling to enforce data integrity and reduce redundancy.",
@@ -133,75 +146,81 @@ export const projects: Project[] = [
     ],
   },
   {
-  id: "clinical-nlp-medical-notes",
-  title: "Clinical NLP System for Medical Notes",
-  subtitle:
-    "NLP engine that extracts structured clinical information from physician notes, supporting coding, risk signals, and compliance needs.",
-  categories: ["Machine Learning", "NLP", "Databases"],
-  tech: [
-    "Python",
-    "spaCy",
-    "BioBERT",
-    "MIMIC-IV",
-    "i2b2",
-    "ICD-10",
-    "Evaluation Benchmarks",
-    "De-identification",
-  ],
-  highlights: [
-    "Designed a clinical NLP pipeline to extract diseases, medications, and procedures from unstructured notes (NER).",
-    "Planned ICD-10 auto-coding workflow to map extracted entities to standardized diagnosis/procedure codes.",
-    "Implemented sentiment/risk signal extraction to support downstream triage and analytics use-cases.",
-    "Included a de-identification module to reduce PHI exposure and support compliance-oriented engineering.",
-    "Defined evaluation benchmarks and an annotation workflow to measure performance and guide iteration.",
-  ],
-  links: [
-    // Add later if you publish code/docs
-    // { label: "GitHub", href: "https://github.com/YOUR_USERNAME/YOUR_REPO" },
-    // { label: "Write-up", href: "https://..." },
-  ],
-  featured: true,
+    id: "clinical-nlp-medical-notes",
+    title: "Clinical NLP System for Medical Notes",
+    subtitle:
+      "NLP engine that extracts structured clinical information from physician notes, supporting coding, risk signals, and compliance needs.",
+    categories: ["Machine Learning", "NLP", "Databases"],
+    tech: [
+      "Python",
+      "spaCy",
+      "BioBERT",
+      "MIMIC-IV",
+      "i2b2",
+      "ICD-10",
+      "Evaluation Benchmarks",
+      "De-identification",
+    ],
+    highlights: [
+      "Designed a clinical NLP pipeline to extract diseases, medications, and procedures from unstructured notes (NER).",
+      "Planned ICD-10 auto-coding workflow to map extracted entities to standardized diagnosis/procedure codes.",
+      "Implemented sentiment/risk signal extraction to support downstream triage and analytics use-cases.",
+      "Included a de-identification module to reduce PHI exposure and support compliance-oriented engineering.",
+      "Defined evaluation benchmarks and an annotation workflow to measure performance and guide iteration.",
+    ],
+    links: [
+      // Add later if you publish code/docs
+      // { label: "GitHub", href: "https://github.com/YOUR_USERNAME/YOUR_REPO" },
+      // { label: "Write-up", href: "https://..." },
+    ],
+    featured: true,
   },
   {
-  id: "comet-metadata-warehouse",
-  title: "Metadata Engineering for Data Warehouse",
-  subtitle:
-    "Designing a metadata framework to support analytics and machine learning over a small research data warehouse.",
-  categories: ["Engineering", "Data Science", "Databases"],
-  tech: [
-    "Python",
-    "SQL",
-    "Metadata Modeling",
-    "Data Warehousing",
-    "Machine Learning Pipelines",
-  ],
-  highlights: [
-    "Designing a metadata schema to describe datasets, attributes, and relationships in a research data warehouse.",
-    "Developing a structured approach to make heterogeneous data sources machine-learning ready.",
-    "Exploring how metadata can drive automated analysis, validation, and feature discovery workflows.",
-    "Building an extensible foundation for analytics and modeling over small, research-oriented data systems.",
-  ],
-  links: [
-    // Intentionally omitted — internal research work
-  ],
+    id: "comet-metadata-warehouse",
+    title: "Metadata Engineering for Data Warehouse",
+    subtitle:
+      "Designing a metadata framework to support analytics and machine learning over a small research data warehouse.",
+    categories: ["Engineering", "Data Science", "Databases"],
+    tech: [
+      "Python",
+      "SQL",
+      "Metadata Modeling",
+      "Data Warehousing",
+      "Machine Learning Pipelines",
+    ],
+    highlights: [
+      "Designing a metadata schema to describe datasets, attributes, and relationships in a research data warehouse.",
+      "Developing a structured approach to make heterogeneous data sources machine-learning ready.",
+      "Exploring how metadata can drive automated analysis, validation, and feature discovery workflows.",
+      "Building an extensible foundation for analytics and modeling over small, research-oriented data systems.",
+    ],
+    links: [
+      // Intentionally omitted — internal research work
+    ],
   },
   {
-  id: "worldwide-stock-screener-db",
-  title: "Worldwide Stock Screener Database",
-  subtitle:
-    "Global equities screening database designed for quantitative research, filtering, and strategy discovery.",
-  categories: ["Engineering", "Data Science", "Databases"],
-  tech: ["SQL", "Python", "Data Modeling", "Financial Analytics", "API Integration"],
-  highlights: [
-    "Designed a normalized database to support screening across international equities and exchanges.",
-    "Built flexible filtering by region/country, exchange, sector/industry, and company fundamentals.",
-    "Enabled universe construction for research workflows and downstream backtesting/strategy evaluation.",
-    "Structured the system to integrate with API-driven ingestion pipelines for scalable updates.",
-  ],
-  links: [
-    // Add your real links later
-    // { label: "GitHub", href: "https://github.com/YOUR_USERNAME/YOUR_REPO" },
-    // { label: "Docs", href: "https://..." },
-  ],
-},
+    id: "worldwide-stock-screener-db",
+    title: "Worldwide Stock Screener Database",
+    subtitle:
+      "Global equities screening database designed for quantitative research, filtering, and strategy discovery.",
+    categories: ["Engineering", "Data Science", "Databases"],
+    tech: [
+      "SQL",
+      "Python",
+      "Data Modeling",
+      "Financial Analytics",
+      "API Integration",
+    ],
+    highlights: [
+      "Designed a normalized database to support screening across international equities and exchanges.",
+      "Built flexible filtering by region/country, exchange, sector/industry, and company fundamentals.",
+      "Enabled universe construction for research workflows and downstream backtesting/strategy evaluation.",
+      "Structured the system to integrate with API-driven ingestion pipelines for scalable updates.",
+    ],
+    links: [
+      // Add your real links later
+      // { label: "GitHub", href: "https://github.com/YOUR_USERNAME/YOUR_REPO" },
+      // { label: "Docs", href: "https://..." },
+    ],
+  },
 ];

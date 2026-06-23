@@ -6,9 +6,9 @@ export interface ResearchLink {
 export type ResearchStatus = "Ongoing" | "In progress" | "Completed";
 
 export interface ResearchOutput {
-  label: string;   // e.g., "Research notes", "Slide deck", "Benchmark plan"
+  label: string; // e.g., "Research notes", "Slide deck", "Benchmark plan"
   detail?: string; // optional: "PDF", "GitHub repo", etc.
-  href?: string;   // optional link if public
+  href?: string; // optional link if public
 }
 
 export interface ResearchItem {

@@ -13,7 +13,8 @@ function getTheme(item: { focusAreas: string[]; title: string }): Theme {
 
 function statusPill(status: string) {
   const base = "text-xs font-semibold px-3 py-1 rounded-full border";
-  if (status === "In progress") return `${base} bg-gray-900 text-white border-gray-900`;
+  if (status === "In progress")
+    return `${base} bg-gray-900 text-white border-gray-900`;
   if (status === "Ongoing") return `${base} bg-gray-50 text-gray-800`;
   return `${base} bg-white text-gray-800`;
 }
@@ -33,9 +34,10 @@ export default function Research() {
         <div>
           <h1 className="text-4xl font-bold">Research</h1>
           <p className="mt-2 text-gray-600 max-w-3xl">
-            Independent research focused on macroeconomic regimes, market structure, and
-            practical implications for investing and decision-making. I emphasize clear
-            hypotheses, repeatable analysis, and evaluation discipline.
+            Independent research focused on macroeconomic regimes, market
+            structure, and practical implications for investing and
+            decision-making. I emphasize clear hypotheses, repeatable analysis,
+            and evaluation discipline.
           </p>
         </div>
 
@@ -60,8 +62,9 @@ export default function Research() {
         <div className="p-6 border rounded-2xl bg-white shadow-sm">
           <h2 className="text-2xl font-semibold">Research philosophy</h2>
           <p className="mt-3 text-gray-700 leading-relaxed">
-            I treat research like an engineering process: define a hypothesis, build a repeatable
-            method, and evaluate results with the same discipline you would apply to a production system.
+            I treat research like an engineering process: define a hypothesis,
+            build a repeatable method, and evaluate results with the same
+            discipline you would apply to a production system.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -102,7 +105,8 @@ export default function Research() {
               <div>
                 <h2 className="text-2xl font-semibold">{item.title}</h2>
                 <p className="mt-1 text-gray-600">
-                  {item.org} • <span className="text-gray-500">{item.timeframe}</span>
+                  {item.org} •{" "}
+                  <span className="text-gray-500">{item.timeframe}</span>
                 </p>
               </div>
               <span className={statusPill(item.status)}>{item.status}</span>
@@ -111,7 +115,10 @@ export default function Research() {
             {/* Focus Areas */}
             <div className="mt-4 flex flex-wrap gap-2">
               {item.focusAreas.map((area) => (
-                <span key={area} className="text-xs px-3 py-1 rounded-full bg-gray-100">
+                <span
+                  key={area}
+                  className="text-xs px-3 py-1 rounded-full bg-gray-100"
+                >
                   {area}
                 </span>
               ))}
@@ -122,7 +129,9 @@ export default function Research() {
 
             {/* Contributions */}
             <div className="mt-5">
-              <h3 className="text-sm font-semibold text-gray-800">Research contributions</h3>
+              <h3 className="text-sm font-semibold text-gray-800">
+                Research contributions
+              </h3>
               <ul className="mt-2 space-y-2 list-disc pl-5 text-gray-700">
                 {item.contributions.map((c, idx) => (
                   <li key={`${item.id}-c-${idx}`}>{c}</li>
@@ -132,10 +141,15 @@ export default function Research() {
 
             {/* Methods & Tools */}
             <div className="mt-5">
-              <h3 className="text-sm font-semibold text-gray-800">Methods & tools</h3>
+              <h3 className="text-sm font-semibold text-gray-800">
+                Methods & tools
+              </h3>
               <div className="mt-2 flex flex-wrap gap-2">
                 {item.methodsTools.map((tool) => (
-                  <span key={tool} className="text-xs px-3 py-1 rounded-full border">
+                  <span
+                    key={tool}
+                    className="text-xs px-3 py-1 rounded-full border"
+                  >
                     {tool}
                   </span>
                 ))}
@@ -166,7 +180,9 @@ export default function Research() {
                     {item.outputs.map((o, idx) => (
                       <li key={`${item.id}-o-${idx}`}>
                         <span className="font-semibold">{o.label}</span>
-                        {o.detail ? <span className="text-gray-600"> — {o.detail}</span> : null}
+                        {o.detail ? (
+                          <span className="text-gray-600"> — {o.detail}</span>
+                        ) : null}
                         {o.href ? (
                           <>
                             {" "}

@@ -15,10 +15,10 @@ export default function Writing() {
       <div className="flex flex-col gap-3">
         <h1 className="text-4xl font-bold">Writing</h1>
         <p className="mt-2 text-gray-600 max-w-3xl">
-          A collection of personal writing and technical reflections on the problems that
-          interest me — from hard computational questions to how organizations and
-          incentives really work. These pieces capture how I think, learn, and challenge
-          assumptions.
+          A collection of personal writing and technical reflections on the
+          problems that interest me — from hard computational questions to how
+          organizations and incentives really work. These pieces capture how I
+          think, learn, and challenge assumptions.
         </p>
       </div>
 
@@ -33,7 +33,8 @@ export default function Writing() {
               <div>
                 <h2 className="text-2xl font-semibold">{w.title}</h2>
                 <p className="mt-1 text-gray-600">
-                  {w.outlet} • <span className="text-gray-500">{w.timeframe}</span>
+                  {w.outlet} •{" "}
+                  <span className="text-gray-500">{w.timeframe}</span>
                 </p>
               </div>
 
@@ -46,7 +47,10 @@ export default function Writing() {
 
             <div className="mt-4 flex flex-wrap gap-2">
               {w.tags.map((tag) => (
-                <span key={tag} className="text-xs px-3 py-1 rounded-full bg-gray-100">
+                <span
+                  key={tag}
+                  className="text-xs px-3 py-1 rounded-full bg-gray-100"
+                >
                   {tag}
                 </span>
               ))}
@@ -55,7 +59,9 @@ export default function Writing() {
             <p className="mt-4 text-gray-700 leading-relaxed">{w.summary}</p>
 
             <div className="mt-5">
-              <h3 className="text-sm font-semibold text-gray-800">Key points</h3>
+              <h3 className="text-sm font-semibold text-gray-800">
+                Key points
+              </h3>
               <ul className="mt-2 space-y-2 list-disc pl-5 text-gray-700">
                 {w.highlights.map((h, idx) => (
                   <li key={`${w.id}-h-${idx}`}>{h}</li>

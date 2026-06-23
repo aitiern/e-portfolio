@@ -4,7 +4,6 @@ import SocialLinks from "../components/SocialLinks";
 import { projects } from "../data/projects";
 import ProofStrip from "../components/ProofStrip";
 
-
 export default function Home() {
   const featured = projects.filter((p) => p.featured).slice(0, 4);
 
@@ -32,9 +31,9 @@ export default function Home() {
             </p>
 
             <p className="mt-5 text-lg text-gray-600 leading-relaxed max-w-2xl">
-              I build data-driven trading, screening, and research platforms for financial
-              decision-making. My work focuses on backtesting, risk-aware systems, and
-              scalable market analytics.
+              I build data-driven trading, screening, and research platforms for
+              financial decision-making. My work focuses on backtesting,
+              risk-aware systems, and scalable market analytics.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -71,11 +70,15 @@ export default function Home() {
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-4">
                 <p className="text-xs font-semibold text-gray-500">Focus</p>
-                <p className="mt-1 font-semibold text-gray-900">Quant Research + Systems</p>
+                <p className="mt-1 font-semibold text-gray-900">
+                  Quant Research + Systems
+                </p>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-4">
                 <p className="text-xs font-semibold text-gray-500">Strength</p>
-                <p className="mt-1 font-semibold text-gray-900">Backtesting + Evaluation</p>
+                <p className="mt-1 font-semibold text-gray-900">
+                  Backtesting + Evaluation
+                </p>
               </div>
             </div>
           </div>
@@ -95,7 +98,9 @@ export default function Home() {
                   <span className="mt-2 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
                   <span>
                     Building an{" "}
-                    <span className="font-semibold text-gray-900">automated trading platform</span>{" "}
+                    <span className="font-semibold text-gray-900">
+                      automated trading platform
+                    </span>{" "}
                     with backtesting, risk controls, and execution pipelines.
                   </span>
                 </li>
@@ -104,8 +109,11 @@ export default function Home() {
                   <span className="mt-2 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
                   <span>
                     Designed a{" "}
-                    <span className="font-semibold text-gray-900">worldwide stock screener database</span>{" "}
-                    for factor-style filtering, universe construction, and strategy research.
+                    <span className="font-semibold text-gray-900">
+                      worldwide stock screener database
+                    </span>{" "}
+                    for factor-style filtering, universe construction, and
+                    strategy research.
                   </span>
                 </li>
 
@@ -113,7 +121,9 @@ export default function Home() {
                   <span className="mt-2 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
                   <span>
                     Strong focus on{" "}
-                    <span className="font-semibold text-gray-900">market + fundamentals data modeling</span>{" "}
+                    <span className="font-semibold text-gray-900">
+                      market + fundamentals data modeling
+                    </span>{" "}
                     (SQL), reproducible research, and performance evaluation.
                   </span>
                 </li>
@@ -122,11 +132,17 @@ export default function Home() {
               <div className="mt-7 grid grid-cols-2 gap-3">
                 <div className="rounded-2xl border border-gray-200 bg-white p-4">
                   <p className="text-xs font-semibold text-gray-500">Primary</p>
-                  <p className="mt-1 font-semibold text-gray-900">Research → Build → Evaluate</p>
+                  <p className="mt-1 font-semibold text-gray-900">
+                    Research → Build → Evaluate
+                  </p>
                 </div>
                 <div className="rounded-2xl border border-gray-200 bg-white p-4">
-                  <p className="text-xs font-semibold text-gray-500">Core loop</p>
-                  <p className="mt-1 font-semibold text-gray-900">Signals • Risk • Backtests</p>
+                  <p className="text-xs font-semibold text-gray-500">
+                    Core loop
+                  </p>
+                  <p className="mt-1 font-semibold text-gray-900">
+                    Signals • Risk • Backtests
+                  </p>
                 </div>
               </div>
 
@@ -147,9 +163,12 @@ export default function Home() {
       <section className="py-12">
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Featured Projects
+            </h2>
             <p className="mt-2 text-gray-600">
-              A small selection of work that best represents my focus and strengths.
+              A small selection of work that best represents my focus and
+              strengths.
             </p>
           </div>
 
@@ -169,7 +188,9 @@ export default function Home() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">{p.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {p.title}
+                  </h3>
                   <p className="mt-2 text-gray-600">{p.subtitle}</p>
                 </div>
 
@@ -206,7 +227,8 @@ export default function Home() {
 
               <div className="mt-6 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
               <p className="mt-5 text-sm text-gray-500">
-                Built with an emphasis on repeatability, evaluation discipline, and systems reliability.
+                Built with an emphasis on repeatability, evaluation discipline,
+                and systems reliability.
               </p>
             </div>
           ))}
@@ -220,10 +242,11 @@ export default function Home() {
             <div className="lg:col-span-7">
               <h2 className="text-3xl font-bold tracking-tight">Backstory</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                I’m building a portfolio at the intersection of data science and engineering—where
-                strong analysis meets systems that run reliably. I’m most interested in problems that
-                involve noisy real-world data, measurable decision-making, and productizing outcomes
-                into tools people can actually use.
+                I’m building a portfolio at the intersection of data science and
+                engineering—where strong analysis meets systems that run
+                reliably. I’m most interested in problems that involve noisy
+                real-world data, measurable decision-making, and productizing
+                outcomes into tools people can actually use.
               </p>
 
               <div className="mt-6">
@@ -240,8 +263,8 @@ export default function Home() {
               <div className="rounded-3xl border border-gray-200 bg-white p-6">
                 <h3 className="text-lg font-semibold">What I’m looking for</h3>
                 <p className="mt-3 text-gray-600">
-                  Internships, research collaborations, and roles where I can build quant research
-                  tooling and data products end-to-end.
+                  Internships, research collaborations, and roles where I can
+                  build quant research tooling and data products end-to-end.
                 </p>
 
                 <div className="mt-5">
@@ -254,7 +277,8 @@ export default function Home() {
                 </div>
 
                 <p className="mt-4 text-xs text-gray-500">
-                  I’m especially interested in teams that care about rigor, evaluation, and clean systems.
+                  I’m especially interested in teams that care about rigor,
+                  evaluation, and clean systems.
                 </p>
               </div>
             </div>
@@ -266,7 +290,8 @@ export default function Home() {
       <section className="py-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-gray-200/70 pt-8">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Aiden Tierney. Built with React, TypeScript, and Tailwind.
+            © {new Date().getFullYear()} Aiden Tierney. Built with React,
+            TypeScript, and Tailwind.
           </p>
           <SocialLinks />
         </div>

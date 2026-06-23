@@ -16,7 +16,9 @@ const allCategories: ProjectCategory[] = [
 ];
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory | "All">("All");
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory | "All">(
+    "All",
+  );
 
   const visible = useMemo(() => {
     if (activeCategory === "All") return projects;
@@ -29,7 +31,8 @@ export default function Projects() {
         <div>
           <h1 className="text-4xl font-bold">Projects</h1>
           <p className="mt-2 text-gray-600 max-w-3xl">
-            Selected work across data systems, quantitative research tooling, and applied ML.
+            Selected work across data systems, quantitative research tooling,
+            and applied ML.
           </p>
         </div>
 
@@ -37,7 +40,9 @@ export default function Projects() {
           <button
             onClick={() => setActiveCategory("All")}
             className={`px-4 py-2 rounded-lg border text-sm transition ${
-              activeCategory === "All" ? "bg-gray-900 text-white" : "hover:bg-gray-50"
+              activeCategory === "All"
+                ? "bg-gray-900 text-white"
+                : "hover:bg-gray-50"
             }`}
           >
             All
@@ -48,7 +53,9 @@ export default function Projects() {
               key={c}
               onClick={() => setActiveCategory(c)}
               className={`px-4 py-2 rounded-lg border text-sm transition ${
-                activeCategory === c ? "bg-gray-900 text-white" : "hover:bg-gray-50"
+                activeCategory === c
+                  ? "bg-gray-900 text-white"
+                  : "hover:bg-gray-50"
               }`}
             >
               {c}

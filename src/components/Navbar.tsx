@@ -3,8 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 
 const navItemBase =
   "text-sm font-semibold px-3 py-2 rounded-xl transition-colors";
-const navItemInactive =
-  "text-gray-600 hover:text-gray-900 hover:bg-white/60";
+const navItemInactive = "text-gray-600 hover:text-gray-900 hover:bg-white/60";
 const navItemActive =
   "text-gray-900 bg-white/70 border border-gray-200 shadow-sm";
 
@@ -17,7 +16,9 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-2xl bg-gradient-to-br from-indigo-500 to-sky-400 shadow-sm" />
             <div className="leading-tight">
-              <p className="text-sm font-extrabold tracking-tight">Aiden Tierney</p>
+              <p className="text-sm font-extrabold tracking-tight">
+                Aiden Tierney
+              </p>
               <p className="text-xs text-gray-500 -mt-0.5">
                 Quant Systems • Data Science
               </p>

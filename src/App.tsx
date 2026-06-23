@@ -10,7 +10,6 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 
-
 export default function App() {
   return (
     <div className="min-h-screen text-gray-900">

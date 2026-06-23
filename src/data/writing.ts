@@ -24,7 +24,8 @@ export const writingItems: WritingItem[] = [
   },
   {
     id: "np-completeness-explainer",
-    title: "Understanding NP-Completeness: Why Some Problems Are Harder Than They Look",
+    title:
+      "Understanding NP-Completeness: Why Some Problems Are Harder Than They Look",
     outlet: "Medium",
     timeframe: "2025",
     tags: ["Algorithms"],

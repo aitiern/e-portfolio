@@ -15,7 +15,8 @@ export default function ProjectDetail() {
       <main className="mx-auto max-w-5xl px-6 py-20">
         <h1 className="text-3xl font-semibold">Project not found</h1>
         <p className="mt-3 text-neutral-400">
-          The project ID in the URL does not match any project in your data model.
+          The project ID in the URL does not match any project in your data
+          model.
         </p>
         <Link
           to="/projects"
